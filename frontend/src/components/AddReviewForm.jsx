@@ -16,7 +16,7 @@ const AddReviewForm = ({ bookId, setReviews }) => {
     };
 
     try {
-      const response = await axios.post('http://localhost:5000/api/reviews', reviewData, {
+      const response = await axios.post('https://book-review-backend-gp60.onrender.com', reviewData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,  // Include token for authenticated users
         },
