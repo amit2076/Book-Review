@@ -8,7 +8,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get('https://book-review-backend-gp60.onrender.com');
+        const response = await axios.get('https://book-review-backend-gp60.onrender.com/api/books');
         setBooks(response.data.books);
       } catch (error) {
         console.error('Error fetching books:', error);
