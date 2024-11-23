@@ -11,7 +11,7 @@ const RegisterPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/users/register', { username, email, password });
+      const response = await axios.post('https://book-review-backend-gp60.onrender.com', { username, email, password });
       alert('Registration successful!');
       navigate('/login');
     } catch (error) {
