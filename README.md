@@ -94,16 +94,25 @@ npm run dev
 The frontend server should now be running on http://localhost:5173.
 
 Environment Variables
+
 Variable	Description	Default Value
+
 PORT	Backend server port	5000
-DB_URI	Database connection string	mongodb://localhost:27017/book-review
+
+MONGO_DB_URI	Database connection string	mongodb://localhost:27017/book-review
+
 JWT_SECRET	Secret key for JWT	your_jwt_secret
+
 VITE_API_URL	Base URL for API requests	http://localhost:5000
+
 Scripts
 Backend
+
 npm run server: Start the backend server.
+
 npm run dev: Start the backend server in development mode (with hot reload).
 Frontend
+
 npm run dev: Start the frontend development server.
 npm run build: Build the frontend for production.
 npm run preview: Preview the production build locally.
