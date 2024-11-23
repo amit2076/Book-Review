@@ -53,9 +53,13 @@ Create a .env file in the root directory.
 Add the following variables:
 makefile
 Copy code
+
 PORT=5000
+
 MONGO_DB_URI=mongodb://localhost:27017/book-review
+
 JWT_SECRET=your_jwt_secret
+
 Run the backend server:
 
 bash
