@@ -13,7 +13,7 @@ const BookDetailPage = () => {
   useEffect(() => {
     const fetchBookDetails = async () => {
       try {
-        const response = await axios.get(`https://book-review-backend-gp60.onrender.com/api/books/${id}`);
+        const response = await axios.get(`http://localhost:5000/api/books/${id}`);
         setBook(response.data);
       } catch (error) {
         console.error('Error fetching book details:', error);
@@ -26,7 +26,7 @@ const BookDetailPage = () => {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await axios.get(`https://book-review-backend-gp60.onrender.com/api/reviews?bookId=${id}`, {
+        const response = await axios.get(`http://localhost:5000/api/reviews?bookId=${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,  // Send token in headers for authentication
           },
