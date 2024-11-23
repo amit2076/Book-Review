@@ -20,7 +20,7 @@ function AddBookForm() {
     };
 
     try {
-      const response = await axios.post('https://book-review-backend-gp60.onrender.com', newBook, {
+      const response = await axios.post('https://book-review-backend-gp60.onrender.com/api/books', newBook, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,  // Include JWT token for authentication
         },
